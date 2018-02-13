@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block main %}
+<title>My Profile </title>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename= "css/profile.css")  }}"/>
+<script src="{{ url_for('static', filename="js/profile.js") }}"></script>
+<div class="body">
+    <img id= "img" alt="Photo Not Found" src = "{{ url_for ('static', filename= "css/monique.jpg") }}" />
+	<h1 style="font-family:cursive;"> {{ name }} </h1>
+    <p class="title"> @mmoncrieffe </p>
+	<p class="title"> Kingston, Jamaica </p>
+	<p class="title"> Joined {{ date}} </p>
+	</div>
+	<p> I am a smart and talented young lady who loves website design and development. 
+	Contact me if you'd like to work together on a new project </p>
+	<a href="#" class="fa fa-linkedin"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#"><i class="fa fa-facebook"></i></a> 
+	<table align="center" cellspacing= "12" >
+  <tr>
+    <td>7</td>
+    <td>100</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td>Post</td>
+    <td>Following</td>
+    <td>Followers</td>
+  </tr>
+</table>
+	<button class="but"> Follow </button>
+  </div>
+{% endblock %}
